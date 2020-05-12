@@ -51,11 +51,12 @@ For a quick refernece of all the changes made in the file:
 #define FIL_RUNOUT_PIN     11       // Hictop+BNV, instead of pins_RAMPS.h
 //#define AUTO_BED_LEVELING_LINEAR  //Hictop
 #define AUTO_BED_LEVELING_BILINEAR
-#define LEFT_PROBE_BED_POSITION 3    // Hictop
-#define RIGHT_PROBE_BED_POSITION 175          // Hictop
-#define FRONT_PROBE_BED_POSITION 3            // Hictop
-#define BACK_PROBE_BED_POSITION 180           // Hictop
+#define MIN_PROBE_EDGE_LEFT 3             // Hictop
+#define MIN_PROBE_EDGE_RIGHT 175          // Hictop
+#define MIN_PROBE_EDGE_FRONT 3            // Hictop
+#define MIN_PROBE_EDGE_BACK 180           // Hictop
 #define LCD_BED_LEVELING  // Hictop SN04 bed level probe
+#define NOZZLE_PARK_FEATURE // Hictop - added due to not compiling with ADVANCED_PAUSE_FEATURE
 #define PREHEAT_1_TEMP_HOTEND 200 //Hictop(180) E3D
 #define PREHEAT_1_TEMP_BED     60 //Hictop(70) E3D
 #define SDSUPPORT //Hictop
