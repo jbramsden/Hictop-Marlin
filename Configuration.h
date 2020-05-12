@@ -128,7 +128,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RAMPS_13_EFB //Hictop
+  #define MOTHERBOARD BOARD_RAMPS_14_EEB //Hictop
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -1257,10 +1257,10 @@
 
   // Probe along the Y axis, advancing X after each column
   //#define PROBE_Y_FIRST
-  #define LEFT_PROBE_BED_POSITION 3    // Hictop
-  #define RIGHT_PROBE_BED_POSITION 175          // Hictop
-  #define FRONT_PROBE_BED_POSITION 3            // Hictop
-  #define BACK_PROBE_BED_POSITION 180           // Hictop
+  #define MIN_PROBE_EDGE_LEFT 3             // Hictop
+  #define MIN_PROBE_EDGE_RIGHT 175          // Hictop
+  #define MIN_PROBE_EDGE_FRONT 3            // Hictop
+  #define MIN_PROBE_EDGE_BACK 180           // Hictop
   
 
   #if ENABLED(AUTO_BED_LEVELING_BILINEAR)
@@ -1362,7 +1362,7 @@
 // - Move the Z probe (or nozzle) to a defined XY point before Z Homing when homing all axes (G28).
 // - Prevent Z homing when the Z probe is outside bed area.
 //
-//#define Z_SAFE_HOMING
+#define Z_SAFE_HOMING //Hictop had to enable to stop an error on compile
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE) / 2)    // X point for Z homing when homing all axes (G28).
@@ -1500,7 +1500,7 @@
  *    P1  Raise the nozzle always to Z-park height.
  *    P2  Raise the nozzle by Z-park amount, limited to Z_MAX_POS.
  */
-//#define NOZZLE_PARK_FEATURE
+#define NOZZLE_PARK_FEATURE // Hictop - added due to not compiling with ADVANCED_PAUSE_FEATURE
 
 #if ENABLED(NOZZLE_PARK_FEATURE)
   // Specify a park position as { X, Y, Z_raise }
