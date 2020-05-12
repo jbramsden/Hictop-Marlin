@@ -16,9 +16,9 @@ For the E3D changes there is also //Hictop E3d Chimera.
 Please note that when you see a ( ) after the Hictop comment with a number in between this will be the default setting for Hictop, but I have customised this for my printer.
 
 ## Reference URLs
-⋅ Marlin firmware: https://github.com/MarlinFirmware/Marlin
-⋅ Hictop firmware: https://www.hic3dprinter.com/pages/firmware
-⋅ E3D Chimera documents on firmware changes: https://e3d-online.dozuki.com/Guide/Chimera+Marlin+Configuration/31?lang=en
+* Marlin firmware: https://github.com/MarlinFirmware/Marlin
+* Hictop firmware: https://www.hic3dprinter.com/pages/firmware
+* E3D Chimera documents on firmware changes: https://e3d-online.dozuki.com/Guide/Chimera+Marlin+Configuration/31?lang=en
 
 ## Changes made to configuration.h
 For a quick refernece of all the changes made in the file:
