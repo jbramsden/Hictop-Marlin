@@ -22,6 +22,7 @@ E3D Chimera documents on firmware changes: https://e3d-online.dozuki.com/Guide/C
 
 ## Changes made to configuration.h
 For a quick refernece of all the changes made in the file:
+```c
 #define BAUDRATE 115200 //Hictop
 #define MOTHERBOARD BOARD_RAMPS_13_EFB //Hictop
 #define CUSTOM_MACHINE_NAME "Hictop E3D" //Hictop
@@ -60,9 +61,11 @@ For a quick refernece of all the changes made in the file:
 #define SDSUPPORT //Hictop
 #define SPI_SPEED SPI_SIXTEENTH_SPEED    // Hictop
 #define REPRAP_DISCOUNT_SMART_CONTROLLER  // Hictop
-
+```
 ## Changes made to configuration_adv.h
 For a quick refernece of all the changes made in the file:
+```c
 #define ADVANCED_PAUSE_FEATURE // Hictop
+```
 
 
