@@ -24,7 +24,7 @@ Please note that when you see a ( ) after the Hictop comment with a number in be
 For a quick refernece of all the changes made in the file:
 ```c
 #define BAUDRATE 115200 //Hictop
-#define MOTHERBOARD BOARD_RAMPS_13_EFB //Hictop
+#define MOTHERBOARD BOARD_RAMPS_14_EEB //Hictop(BOARD_RAMPS_13_EFB) E3D
 #define CUSTOM_MACHINE_NAME "Hictop E3D" //Hictop
 #define EXTRUDERS 2 //Hictop E3D Chimera
 #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75 //Hictop E3D Chimera
@@ -51,6 +51,7 @@ For a quick refernece of all the changes made in the file:
 #define FIL_RUNOUT_PIN     11       // Hictop+BNV, instead of pins_RAMPS.h
 //#define AUTO_BED_LEVELING_LINEAR  //Hictop
 #define AUTO_BED_LEVELING_BILINEAR
+#define Z_SAFE_HOMING //Hictop had to enable to stop an error on compile
 #define MIN_PROBE_EDGE_LEFT 3             // Hictop
 #define MIN_PROBE_EDGE_RIGHT 175          // Hictop
 #define MIN_PROBE_EDGE_FRONT 3            // Hictop
