@@ -1,9 +1,12 @@
 # Hictop-Marlin
 Marlin configuration files for a Hictop 3D printer
 
+## Releases
+If you go to the [release page](https://github.com/jbramsden/Hictop-Marlin/releases) you will find the Marlin firmware for the Hictop printer. Currently version 1.1.6, 1.1.9 and 2.0.5 are available. Download the Marlin.ino.hex file and write the firmware to the printing using Cura or other tools.
+
 ## Introduction
 These are my configuration files for Marlin 2.0.x for my Hictop 3D printer. 
-The changes are based of vlachoudis hard work on https://www.thingiverse.com/thing:2829405 for Marlin version 1.1.9
+The changes are based of vlachoudis hard work on https://www.thingiverse.com/thing:2829405 for Marlin version 1.1.8
 
 ## Changes to my printer from the Standard Hictop
 I have made only two changes so far to my standard Hictop Prusa clone.
