@@ -26,8 +26,8 @@ Please note that when you see a ( ) after the Hictop comment with a number in be
 ## Changes made to configuration.h
 For a quick refernece of all the changes made in the file:
 ```c
-#define BAUDRATE 115200 //Hictop
-#define MOTHERBOARD BOARD_RAMPS_14_EEB //Hictop(BOARD_RAMPS_13_EFB) E3D
+#define BAUDRATE 250000 //Hictop(115200)
+#define MOTHERBOARD BOARD_MKS_GEN_13 //Hictop
 #define CUSTOM_MACHINE_NAME "Hictop E3D" //Hictop
 #define EXTRUDERS 2 //Hictop E3D Chimera
 #define DEFAULT_NOMINAL_FILAMENT_DIA 1.75 //Hictop E3D Chimera
@@ -45,24 +45,24 @@ For a quick refernece of all the changes made in the file:
 #define Z_MIN_PROBE_ENDSTOP_INVERTING true // Hictop Set to true to invert the logic of the probe.
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 398, 94.4962144 } // Hictop
 #define FIX_MOUNTED_PROBE // Hictop
-#define NOZZLE_TO_PROBE_OFFSET { -10, -10, -0.5 } // Hictop
+#define NOZZLE_TO_PROBE_OFFSET { -10, -10, 2 } // Hictop(-10,-10, -0.5) SN04 probe
 #define INVERT_Y_DIR false  // Hictop
 #define INVERT_Z_DIR true // Hictop
+#define INVERT_E1_DIR true  // Hictop(False) E3D
 #define X_BED_SIZE 210   // Hictop
 #define Y_BED_SIZE 270   // Hictop
 #define FIL_RUNOUT_INVERTING true // Hictop Set to true to invert the logic of the sensor.
 #define FIL_RUNOUT_PIN     11       // Hictop+BNV, instead of pins_RAMPS.h
 //#define AUTO_BED_LEVELING_LINEAR  //Hictop
-#define AUTO_BED_LEVELING_BILINEAR
-#define Z_SAFE_HOMING //Hictop had to enable to stop an error on compile
 #define MIN_PROBE_EDGE_LEFT 3             // Hictop
 #define MIN_PROBE_EDGE_RIGHT 175          // Hictop
-#define MIN_PROBE_EDGE_FRONT 3            // Hictop
+#define MIN_PROBE_EDGE_FRONT 10           // Hictop
 #define MIN_PROBE_EDGE_BACK 180           // Hictop
 #define LCD_BED_LEVELING  // Hictop SN04 bed level probe
-#define NOZZLE_PARK_FEATURE // Hictop - added due to not compiling with ADVANCED_PAUSE_FEATURE
+#define Z_SAFE_HOMING //Hictop had to enable to stop an error on compile
 #define PREHEAT_1_TEMP_HOTEND 200 //Hictop(180) E3D
 #define PREHEAT_1_TEMP_BED     60 //Hictop(70) E3D
+#define NOZZLE_PARK_FEATURE // Hictop - added due to not compiling with ADVANCED_PAUSE_FEATURE
 #define SDSUPPORT //Hictop
 #define SPI_SPEED SPI_SIXTEENTH_SPEED    // Hictop
 #define REPRAP_DISCOUNT_SMART_CONTROLLER  // Hictop
